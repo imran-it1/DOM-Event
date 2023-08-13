@@ -11,8 +11,6 @@ document.getElementById('comment-add-btn').addEventListener('click', function(){
     // append the child
     commentContainer.appendChild(p);
 
-
-
     // Clear the text area after add a comment
     document.getElementById('comment-box').value = '';
 })
