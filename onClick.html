@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnClick Event</title>
+  </head>
+  <body>
+    <button id="make-pink" onclick="makePink()">Make Pink</button>
+    <button id="make-purple">Make Purple</button>
+
+    <script>
+      // Onclick a ei function ta run hobe.
+      function makePink() {
+        document.body.style.backgroundColor = 'pink';
+      }
+
+      document
+        .getElementById('make-purple')
+        .addEventListener('click', function () {
+          document.body.style.backgroundColor = 'purple';
+        });
+    </script>
+  </body>
+</html>
